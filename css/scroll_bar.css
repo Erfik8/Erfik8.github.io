@@ -1,13 +1,22 @@
 
+	body::-webkit-scrollbar
+	{
+		width: 12px;
+	}
 
-body::-webkit-scrollbar
+	body::-webkit-scrollbar-thumb
+	{
+		background: black;
+		border-radius: 10px;
+		border: solid 3px white;
+	}
+@media screen and (max-width: 600px)
 {
-	width: 12px;
+	body::-webkit-scrollbar
+	{
+		width: 0px;
+	}
+
+
 }
 
-body::-webkit-scrollbar-thumb
-{
-	background: black;
-	border-radius: 10px;
-	border: solid 3px white;
-}

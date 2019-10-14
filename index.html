@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<link rel="Stylesheet" type="text/css" href="css\menu_nav.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\header.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\hidden_menu.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\scroll_bar.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\main.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\a_formating.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\aside.css"/>
+		<meta charset="Utf-8"/>
+		<script type="text/javascript" src="js\menu.js"> </script>
+		<script type="text/javascript" src="js\buttons.js"> </script>
+		<title>1 piętro</title>
+	</head>
+	<body onload="react()">
+	
+	
+		<div id="menu_nav" class="menu_nav">
+			<nav>
+				<div id="menu_start" onclick="show()" class="menu_start">
+					<img src="ikony\menu.png" width="40" height="50">
+				</div>
+				<a href="#header" >
+					<div class="menu_nav_main_page" >
+						<img src="ikony\icon.png" width="90" height="90"/><h1>SchoolMap</br>Navigator</h1>
+					</div>
+				</a>
+				<div id="login"><img src="ikony\login.jpg" width="30" height="30"/></div>
+			</nav>
+		</div>
+		
+		
+		<header id="header">
+			<nav class="header_nav">
+				<div id="menu_start" onclick="show()" class="menu_start"><img src="ikony\menu.png" width="40" height="50"></div>
+				<div id="login"><img src="ikony\login.jpg" width="30" height="30"/></div>
+			</nav>
+			<div class="icon">
+				<img src="ikony\icon.png" width="90" height="90"/><h1>SchoolMap </br> Navigator</h1>
+			</div>
+			
+			<a href="#scroll_down"><div  class="arrow_down" id="scroll_down"><img src="ikony\down_arrow.ico" width="60" height="40"></div></a>
+		</header>
+		
+		
+		
+		<main id="main">
+			<div class="buttons" data-text-id="find">
+				<p>Znajdź mi lekcje</p>
+			</div>
+			<div class="buttons" data-text-id="map">
+				<p>Mapa szkoly</p>
+			</div>
+			<div class="buttons" data-text-id="schedule">
+				<p>Plan lekcji</p>
+			</div>
+			<div class="buttons" data-text-id="teachers">
+				<p>Nauczyciele</p>
+			</div>
+		
+		</main>
+		
+		<aside>
+			<span id="active">Text domyślny</span>
+			<span data-id="find">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa orci, feugiat at tempus vel, lobortis in odio. Mauris facilisis dapibus orci, egestas elementum lectus suscipit tristique. Vivamus a luctus lectus. Mauris at mauris vel erat vulputate sollicitudin nec id sem. Duis ullamcorper at nisi eget convallis. Duis eleifend nulla vitae lectus feugiat varius. Cras mi urna, tincidunt sed orci vel, aliquam sollicitudin ipsum. Phasellus eget semper ipsum. Vivamus gravida sapien ac elit sagittis dapibus.
+			</span>
+			<span data-id="map">
+				Etiam imperdiet vitae nunc ac rutrum. Pellentesque leo neque, vestibulum eu tincidunt non, faucibus pretium sem. Curabitur in sapien efficitur, semper nisl nec, dapibus orci. Pellentesque elementum ante lorem, nec tincidunt magna euismod eget. Curabitur non velit faucibus, interdum mi at, lobortis orci. Praesent nec porta mi. Sed nec risus consequat, consectetur lorem rutrum, bibendum ipsum. Quisque vel nulla quis est scelerisque tristique a mollis leo. Maecenas pellentesque tortor id commodo hendrerit.
+			</span>
+			<span data-id="schedule">
+				Suspendisse vitae turpis et metus vehicula pretium eget sed quam. Cras turpis lorem, consequat feugiat velit non, fermentum ultricies velit. Mauris iaculis, libero vel consectetur vehicula, dolor lorem malesuada enim, sed aliquam leo purus ac libero. Nulla ut nunc nisi. Aliquam tincidunt id nibh ac suscipit. Phasellus eleifend metus nisl, sit amet pretium urna imperdiet venenatis. Vestibulum iaculis fringilla semper. Integer tortor odio, rutrum quis eros ut, pulvinar dictum dui. Duis commodo maximus posuere. Donec quis pharetra nunc. Morbi magna libero, viverra a lacus in, pulvinar scelerisque sem. Phasellus lobortis nisi massa. Aliquam eu efficitur odio. Maecenas vel tortor nec orci egestas mattis. Duis varius justo nec turpis viverra tincidunt. Maecenas ut aliquet metus.
+			</span>
+			<span data-id="teachers">
+				Donec mollis feugiat lectus, eu tincidunt mauris dictum sed. Curabitur fermentum sollicitudin nisi vehicula eleifend. Integer vulputate mauris purus. Aenean ultrices eget augue et aliquam. In consectetur tellus id tincidunt vulputate. Praesent fermentum nibh in nibh mattis, at pellentesque elit fermentum. Mauris aliquet sed libero id aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis sem at mauris tempor tincidunt at sit amet libero. Vestibulum tristique dolor et quam porttitor, vel mollis odio venenatis. Vestibulum fermentum massa nec ligula hendrerit volutpat. Aenean interdum cursus turpis non suscipit. Nunc ultrices, lorem finibus congue posuere, leo erat porta libero, sed tempor augue erat nec purus. Maecenas a lacus malesuada, ultrices sapien sed, facilisis purus. Sed ligula massa, convallis non lacus eget, auctor posuere erat. Nullam luctus neque efficitur dui maximus mattis.
+			</span>
+		
+		
+		</aside>
+		
+		
+		
+		
+		<menu id="menu_div" onclick="hide()" style="width: 0px;">
+			<nav>
+				<div id="menu_end" ><img class="menu"src="ikony\menu.png" width="40" height="50"></div>
+			</nav>
+			<a href="">
+			<div class="button">
+				<h2>Znajdź mi lekcje</h2>
+			</div>
+			</a>
+			
+			<a href="">
+			<div class="button">
+				<h2>Mapa szkoły</h2>
+			</div>
+			</a>
+			
+			<a href="">
+			<div class="button">
+				<h2>Plan Lekcji</h2>
+			</div>
+			</a>
+			
+			<a href="">
+			<div class="button">
+				<h2>Nauczyciele</h2>
+			</div>
+			</a>
+			
+
+		</menu>
+		
+
+	</body>
+
+</html>

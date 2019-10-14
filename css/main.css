@@ -1,0 +1,94 @@
+main
+{
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 70px;
+	justify-content: center;
+	box-sizing: border-box;
+}
+.buttons
+{
+	flex-shrink:0;
+	width: 20%;
+	min-width: 240px;
+	height: 130px;
+	border: 2px solid #48f083;
+	margin: 10px auto 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+.buttons:nth-child(1)
+{
+	background-image: url("../ikony/lupa.png");
+}
+.buttons:nth-child(2)
+{
+	background-image: url("../ikony/map.png");
+}
+.buttons:nth-child(3)
+{
+	background-image: url("../ikony/lessons.png");
+}
+.buttons:nth-child(4)
+{
+	background-image: url("../ikony/teacher.png");
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.buttons
+	{
+		width: 400px;
+		
+	}
+} 
+@media only screen and (max-width: 600px)
+{
+	.buttons
+	{
+		max-width: 400px;
+		
+	}
+} 
+
+.buttons>p
+{
+	text-align: center;
+	margin: 0px;
+	padding: 7% 30px 0px 7%;
+	position: relative;
+	left: 100%;
+	font-size: 32px;
+	color: white;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: #35e871;
+	font-family: "Bookman Old Style";
+	transition: 0.3s;
+	transition-property: left;
+
+}
+.buttons:hover>p
+{
+	left: 0px;
+	cursor: pointer;
+}
+
+#clicked
+{
+	background-color: #B80A8F;
+	filter: invert();
+	border: 2px solid #B70F7C;
+}
+#clicked>p{filter:invert();}
+

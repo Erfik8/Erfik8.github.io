@@ -2,19 +2,19 @@ html
 {
 	scroll-behavior:smooth;
 }
+
 body
 {
 	margin: 0px;
-	height: 1500px;
 	overflow-y: scroll;
-}
-
-
-header
-{
 	background-image: url("../ikony/school.png");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+header
+{
+
 	width: 100%;
 	height: 100vh;
 	margin: 0px;

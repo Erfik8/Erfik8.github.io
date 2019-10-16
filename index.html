@@ -4,10 +4,10 @@
 		<link rel="Stylesheet" type="text/css" href="css\menu_nav.css"/>
 		<link rel="Stylesheet" type="text/css" href="css\header.css"/>
 		<link rel="Stylesheet" type="text/css" href="css\hidden_menu.css"/>
-		<link rel="Stylesheet" type="text/css" href="css\scroll_bar.css"/>
 		<link rel="Stylesheet" type="text/css" href="css\main.css"/>
 		<link rel="Stylesheet" type="text/css" href="css\a_formating.css"/>
 		<link rel="Stylesheet" type="text/css" href="css\aside.css"/>
+		<link rel="Stylesheet" type="text/css" href="css\question_div.css"/>
 		<meta charset="Utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<script type="text/javascript" src="js\menu.js"> </script>
@@ -15,14 +15,12 @@
 		<title>1 piętro</title>
 	</head>
 	<body onload="react()">
-	
-	
 		<div id="menu_nav" class="menu_nav">
 			<nav>
 				<div id="menu_start" onclick="show()" class="menu_start">
 					<img src="ikony\menu.png" width="40" height="50">
 				</div>
-				<a href="#header" >
+				<a href="#header" style="transform: scale(0.6);">
 					<div class="menu_nav_main_page" >
 						<img src="ikony\icon.png" width="90" height="90"/><h1>SchoolMap</br>Navigator</h1>
 					</div>
@@ -79,6 +77,25 @@
 		
 		
 		</aside>
+		
+		<div class="question">
+			<div class="all">
+				<h1 class="question_title">Zadaj nam pytanie</h1>
+				<p class="some_text">Masz pytanie odnośnie strony, lub chcesz coś zgłosić? A może byłbyś zainteresowany współpracą? Wyślij swoją wiadomość</p>
+				<div class="content">
+					<form action="" class="question_form">
+						<fieldset>
+							<legend>Wypelnij formularz</legend>
+							<input type="text" name="imie" placeholder="Imie: "></input>
+							<input type="text" name="nazwisko" placeholder="Nazwisko: "></input>
+							<input type="text" name="tytul" placeholder="Tytul: "></input>
+							<textarea  name="opis" cols="90"></textarea>
+						
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
 		
 		
 		

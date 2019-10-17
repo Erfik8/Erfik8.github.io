@@ -188,4 +188,7 @@ button img
 		margin-right: 0;
 		width: 100%;
 	}
+	h1.question_title
+	{
+	padding:20px 0px 20px 0px;}
 }
